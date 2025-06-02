@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 from transformers import pipeline
 
 app = Flask(__name__)
-classifier = pipeline("zero-shot-classification", model="distilroberta-base")
+classifier = pipeline("zero-shot-classification", model="sshleifer/tiny-distilroberta-base")
 
 CANDIDATE_GENRES = [
     "science fiction", "romance", "thriller", "fantasy",
